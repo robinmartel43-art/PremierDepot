@@ -38,11 +38,11 @@ int division(int a, int b);
 
 int exposant(int nb, int exp)
 {
-		int resultat;
+	int resultat;
 		
-		resultat = exp(a, b);
+	resultat = exp(a, b);
 		
-		return resultat;
+	return resultat;
 
 int factoriel(int nb)
 {
