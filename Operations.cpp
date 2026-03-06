@@ -52,5 +52,4 @@ int factoriel(int nb)
         resultat *= i;
     }
     return resultat;
-
 }
