@@ -53,3 +53,26 @@ int factoriel(int nb)
     }
     return resultat;
 }
+
+int estPremier(int n) {
+    if (n <= 1) return 0;
+    for (int i = 2; i * i <= n; i++) {
+        if (n % i == 0) return 0;
+    }
+    return 1;
+}
+
+int NombrePremier(int n) {
+    int compteur = 0;
+    int nombreTeste = 2;
+
+    while (compteur < n) {
+        if (estPremier(nombreTeste)) {
+            compteur++;
+        }
+        if (compteur < n) {
+            nombreTeste++;
+        }
+    }
+    return nombreTeste;
+}
