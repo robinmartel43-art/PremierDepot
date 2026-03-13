@@ -54,6 +54,18 @@ int factoriel(int nb)
     return resultat;
 }
 
+
+int distance(int x1, int y1, int x2, int y2);
+{
+	int resultat;
+	
+    int dx = x2 - x1;
+    int dy = y2 - y1;
+    resultat = sqrt(dx**2 + dy**2);
+    
+	return resultat;
+}
+
 int estPremier(int n) {
     if (n <= 1) return 0;
     for (int i = 2; i * i <= n; i++) {
@@ -76,3 +88,4 @@ int NombrePremier(int n) {
     }
     return nombreTeste;
 }
+
